@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <style>
+body {
+    background-image: url('https://vectorseek.com/wp-content/uploads/2023/08/Philippine-Tribal-Sun-Logo-Vector.svg-.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: moving; /* Keeps the background image fixed in place */
+}
     // Variables
 $red: #ad0000;
 $lightBlack: #333;
@@ -26,7 +32,8 @@ h4 {font-size: 1.5em;}
 p {font-size: 1.25em;}
 /*Layout*/
 html,
-body {
+body 
+{
   width: 100%;
   height: 100%;
 }
@@ -123,9 +130,9 @@ hr {
 }
 .sec-intro h1 {
   position: absolute;
-  bottom: .5em;
-  left: .5em;
-  padding: .5em;
+  bottom: .7em;
+  left: .7em;
+  padding: .4em;
   background: rgba(0,0,0,.5);
   color: #fff;
 }
@@ -134,7 +141,7 @@ hr {
   float: left;
   padding: 1.5em 1em;
   width: 25%;
-  height: 400px;
+  height: 600px;
   border-top: .1em solid $lightGrey;
   border-bottom: .1em solid $lightGrey;
   border-left: .1em solid $lightGrey;
@@ -150,7 +157,7 @@ hr {
   text-align: justify;
 }
 .box .button {
-  margin: 4em auto;
+  margin: 16em auto;
 }
 /*Events*/
 .sec-events > h1 {margin-top: 1em;}
@@ -246,13 +253,25 @@ footer a {
   &:hover {color: $lightBlack;}
 }
 .copy {font-size: .85em;}
+#trail {
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+    background: rgba(128, 0, 128, 0.7); /* Change to a semi-transparent purple */
+    box-shadow: 0 0 10px rgba(128, 0, 128, 1); /* Change to a purple glow */
+    width: 20px; /* Adjust size */
+    height: 20px; /* Adjust size */
+    transform: translate(-50%, -50%);
+    transition: opacity 2.5s;
+}
+
 </style>
 <body>
     <div class="line"></div>
 <div class="wrapper">
   <header role="banner">
     <nav role="navigation">
-      <h1><a href="#">Asperion</a></h1>
+      <h1><a href="#">Tabilla</a></h1>
       <ul class="nav-ul">
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
@@ -264,81 +283,77 @@ footer a {
   </header>
   <main role="main">
     <section class="sec-intro" role="section">
-      <img src="https://www.techweekeurope.co.uk/wp-content/uploads/2012/07/wifimountaindownload.jpg" alt="" />
-      <h1>Be Innovative!</h1>
+      <img src="#" alt="" />
+      <h1>Grade is Just a Number!</h1>
     </section>
     <section class="sec-boxes" role="section">
       <adrticle class="box">
-        <h1>Open-minded</h1>
-        <p>Every option should be explored and tried no matter how unpredictable, impossible, insane or ridiculous does it looks or sound.</p>
-        <button class="button" type="button" role="button" value="MORE">More</button>
+        <h1>Tic-Tac-Toe</h1>
+        <p>Tic-Tac-Toe is a game that can be traced back mellennia ago, in Ancient Egypt. It's simplicity, of a 3 by 3 tiled board, have captured the imaginations of the Egyptians. I have managed to incorporate this ancient game, into our modern world.</p>
+        <button class="button" type="button" role="button"onclick="redirectToWebsite1()">More</button>
       </adrticle>
       <adrticle class="box">
-        <h1>Creative</h1>
-        <p>Brainstorming, idea generation, playing sessions, note taking. You think you used everything? We will challenge your mind and its abilities to the limits.</p>
-        <button class="button" type="button" role="button" value="MORE">More</button>
+        <h1>Roulette</h1>
+        <p>Devised way back to 18th-century France, inspired from Blaise Pascal's primitive form of roulette which featured a spinning wheel where people place bets on the different categories either on the color, type of number or the number itself.</p>
+        <button class="button" type="button" role="button"onclick="redirectToWebsite2()">More</button>
       </adrticle>
       <adrticle class="box">
-        <h1>Bold</h1>
-        <p>Our methods and ideas are are not written or following any books, curriculums or rules. We consider ourselves rebels and we are proud of it.</p>
-        <button class="button" type="button" role="button" value="MORE">More</button>
+        <h1>Calcu-lator</h1>
+        <p>Inspired from the same inventor of the roulette game, the modern calculator can be traced back to Blaise Pascal's invention, the Pascaline. With it's limited capabilities, only allowing addition and subtraction. However, modern calculators have outdone Pascal's work.</p>
+        <button class="button" type="button" role="button"onclick="redirectToWebsite3()">More</button>
       </adrticle>
       <adrticle class="box">
-        <h1>Smart</h1>
-        <p>Every project with innovation as a goal requires smart approach. Identify real problem first and look for the smartest and simplest solution later.</p>
-        <button class="button" type="button" role="button" value="MORE">More</button>
+        <h1>Flappy-Bird</h1>
+        <p>Flappy-Bird,is a game popular a decade ago, which was published by it's Vietnamese author. However due to it's publicity and intense gaming addiction, the original owner of the Flappy Bird game disbanded the game. However this cgame of mine, mimics what was of 2013's Flappy Bird.</p>
+        <button class="button" type="button" role="button"onclick="redirectToWebsite4()">More</button>
       </adrticle>
     </section>
     <section class="sec-events" role="section">
       <hr />
-      <h1>Upcomming events</h1>
+      <h1>CJ's Details</h1>
       <article>
-        <h1>Tire Technology Expo</h1>
-        <p>Tire Technology Expo has grown in strength and stature every year since it was started in Europe 15 years ago. Visitors and exhibitors to the conference and exhibition staged in February 2014 universally praised it as the 'world's leading tire design and tire manufacturing event', noting in particular the outstanding quality of the conference papers and speakers, and the comprehensive extent of machinery manufacturers and suppliers who exhibited at the event.</p>
-        <a class="link" href="#">more...</a>
+        <h1>Educational background</h1>
+        <p>The owner of this webpage, is a graduate of junior highschool in the curriculum of the Republic of the Philippines. Currently he is taking his senior highschool studies, for which he continues to flourish his knowledge in various fields, such as of coding.</p>
+        <a class="link" href="https://web.facebook.com/@mlangnhsdotcom/?_rdc=1&_rdr">more...</a>
       </article>
       <article>
-        <h1>Meteorology World Expo</h1>
-        <p>Meteorological Technology World Expo is a truly international exhibition of the very latest climate, weather and hydro - meteorological forecasting, measurement and analysis technologies and service providers for a global community of key decision makers within the aviation industry, shipping companies, marine / port installations, airports, military operations, off-shore exploration companies, wind farm operators, met offices, agriculture operations and research institutes.</p>
-        <a class="link" href="#">more...</a>
+        <h1>Basic Information</h1>
+        <p>CJ, otherwise known as Cyrus Jeremy S. Tabilla, was born on May 3rd of 2008, at the time being, he is 16 years old. From various respondents, you may get a different result on what they think of CJ, as he is a complex individual.</p>
+        <a class="link" href="https://web.facebook.com/cyrus.tabilla">more...</a>
       </article>
       <article>
-        <h1>Wearable Tech Expo</h1>
-        <p>See live demos, listen to case studies, speak with Wearable Tech Experts The first Wearable Tech Expo in Tokyo 2014. Key players from Japan, America and Europe announced their new products and attracted attention from all over the world. The next Wearable Tech Expo in Tokyo will be doubling in size and include Robotics and IoT. The main players in the wearable industry, human factor engineers, brain scientists, media providers and creators will discuss the future of wearable technology! </p>
-        <a class="link" href="#">more...</a>
+        <h1>Ocupation</h1>
+        <p>The owner of this webpage, is fond of trying outnew things, as to why he can consider himself a jack of all trades. Currently, the owner of this page is unemployed, but do accept commision with fees for projects that involve around Coding, writing manuscript, and writing articles.</p>
+        <a class="link" href="https://web.facebook.com/cyrus.tabilla">more...</a>
       </article>
       <article>
-        <h1>Space Tech Expo</h1>
-        <p>Space Tech Expo is the West Coast's premier B2B space event for spacecraft, satellite, launch vehicle and space-related technologies. Taking place in Long Beach, the Space Tech Expo exhibition and conference brings together global decision-makers involved in the design, build and testing of spacecraft, satellite, launch vehicle and space-related technologies. Leading the West Coast space and satellite industry, Space Tech Expo is where end-users connect with solution providers.</p>
-        <a class="link" href="#">more...</a>
+        <h1>Civil Status</h1>
+        <p>The owner of this page is single.</p>
+        <a class="link" href="https://web.facebook.com/cyrus.tabilla">more...</a>
       </article>
     </section>
     <section class="sec-projects" role="section">
       <hr />
-      <h1>Previous Projects</h1>
+      <h1>Other Projects</h1>
       <article>
-        <h1>Neural network for Google</h1>
-        <p>People from Google approached us this January with offer to create new neural network for whole Google's ecosystem. This idea was very interesting and looked almost impossible at first glance. However, our engineers proved their expertise and built amazing autonomous platform. <a class="link" href="#">more...</a></p>
+        <h1>Marionette</h1>
+        <p>This is a book published by the owner, CJ, whom which a free version of the Novel can be found on Wattpad. The story is about the mystery of Valt's journey as he traverse through time. Come and take a read of the fun, and don't forget to leave your comments. <a class="link" href="https://www.wattpad.com/story/371720018-marionette-fabric-of-reality">more...</a></p>
       </article>
       <article>
-        <h1>Faster operating system for Apple</h1>
-        <p>For a years, since founding days of a company, Apple always worked with its own operating system. In October, this was about to change. Our company got chance to rewrite the history by creating brand new OS for Apple. It was very difficult and all our employees worked hard every day. <a class="link" href="#">more...</a></p>
+        <h1>Reserved</h1>
+        <p>This is for future projects <a class="link" href="#">more...</a></p>
       </article>
       <article>
-        <h1>Manufacturing technology for Intel</h1>
-        <p>Intel has been manufacturing company for many years. They always used the latest technologies to achieve the best results with lowest costs. However, this was not enough. Intel decided to offer us something that could disrupt whole technology sector. <a class="link" href="#">more...</a></p>
+        <h1>Reserved</h1>
+        <p>This is for future projects <a class="link" href="#">more...</a></p>
       </article>
     </section>
     <section class="sec-standards" role="section">
       <hr />
       <h1>Our Standards</h1>
       <article>
-        <h1>Excellence</h1>
-        <p>Our goal is to give our customers the best solutions in highest aquality. Our employees strive for excellence and work hard to achieve it. Everything must work and be reliable. Great design must be both, aesthetic and functional. Product or service that pass these conditions will be everlasting.</p>
-      </article>
-      <article>
         <h1>Uniqueness</h1>
-        <p>Our mantra is to create new paths. We are not interested in copying others because we know, that if you want to succeed, you have to be different, unique. Our customers know that we create unique products and experience for them. This is the best way to differentiate us and our brand from the noise on market. Unique, different and proud.</p>
+        <p>The author and owner of this webpage, values uniqueness in his workplace. I can guarantee an original work of art to be delivered at your doorstep.</p>
       </article>
     </section>
     <section class="sec-partners" role="section">
@@ -377,8 +392,36 @@ footer a {
       <li><a href="#">Contacts</a></li>
     </ul>
   </nav>
-  <p class="copy">&copy; Alex Devero Design 2014</p>
+  <p class="copy">&copy; Cyrus Jeremy Salvador Tabilla</p>
 </footer>
 <div class="line"></div>
+<div id="trail"></div>
 </body>
+<script>
+function redirectToWebsite1() {
+    window.location.href = "https://tabilla.github.io/Tic-Tac-Toe/";
+}
+function redirectToWebsite2() {
+    window.location.href = "https://tabilla.github.io/Roulette-Game/";
+}
+function redirectToWebsite3() {
+    window.location.href = "https://tabilla.github.io/Calculator/";
+}
+function redirectToWebsite4() {
+  window.location.href = "https://tabilla.github.io/Flappy-Bird-/";
+}
+
+const trail = document.getElementById("trail");
+
+document.addEventListener("mousemove", (e) => {
+    trail.style.left = `${e.pageX}px`;
+    trail.style.top = `${e.pageY}px`;
+    trail.style.opacity = 1; // Show the trail
+
+    // Fade out the trail after a short time
+    setTimeout(() => {
+        trail.style.opacity = 0;
+    }, 200); // Adjust time (milliseconds) as needed
+});
+</script>
 </html>
